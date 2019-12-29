@@ -20,8 +20,7 @@ class createClientTest extends TestCase
         
         $attributes = [
             'companyName' => $this->faker->company,
-            'ownerName' => $this->faker->name,
-            'ownerTitle' => $this->faker->jobTitle
+            'ownerFirst' => $this->faker->name,
 
         ];
 

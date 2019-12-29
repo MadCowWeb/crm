@@ -11,9 +11,8 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
-
+Route::get('/', 'PagesController@home');
 Route::get('/clients', 'ClientsController@index');
 Route::post('/clients', 'ClientsController@store');
+Route::get('/clients/{client}', 'ClientsController@show');
+Route::get('/create', 'ClientsController@create');
