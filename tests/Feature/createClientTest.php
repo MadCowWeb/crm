@@ -25,11 +25,14 @@ class createClientTest extends TestCase
 
         ];
 
-        $this->post('/clients', $attributes);
+        $this->post('/clients', $attributes)->assertRedirect('/clients');
 
 
         $this->assertDatabaseHas('clients', $attributes);
 
+        $this->get('/clients')->assertSee($attributes['companyName']);
+
 
     }
+
 }

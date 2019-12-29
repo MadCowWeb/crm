@@ -15,23 +15,5 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-//Route::get('/clients/{client}', 'ClientsController@show');
-
-
-Route::get('/clients', function () {
-
-    $clients = App\Client::all();
-
-    return view('client', compact('clients'));
-});
-
-
-
-
-
-
-Route::post('/clients', function() {
-
-    App\Client::create(request(['companyName', 'ownerName', 'ownerTitle']));
-
-});
+Route::get('/clients', 'ClientsController@index');
+Route::post('/clients', 'ClientsController@store');

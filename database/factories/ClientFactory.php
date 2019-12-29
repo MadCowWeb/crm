@@ -18,8 +18,8 @@ use Illuminate\Support\Str;
 
 $factory->define(Client::class, function (Faker $faker) {
     return [
-            'companyName' => $faker->company,
-            'ownerName' => $faker->name,
-            'ownerTitle' => $faker->jobTitle,
+        'companyName' => $faker->company,
+        'ownerName' => $faker->name,
+        'ownerTitle' => $faker->jobTitle,
     ];
 });

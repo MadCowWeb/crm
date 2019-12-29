@@ -12,9 +12,9 @@
     <body>
             <div class="content">
                 <div class="title m-b-md">
-                    <h1>{{ $clients->companyName }}</h1>
-                    <h1>{{ $clients->ownerName }}</h1>
-                    <h1>{{ $clients->ownerTitle }}</h1>
+                    <h1>{{ $clients[0]->companyName }}</h1>
+                    <h1>{{ $clients[0]->ownerName }}</h1>
+                    <h1>{{ $clients[0]->ownerTitle }}</h1>
                 </div>
             </div>
             

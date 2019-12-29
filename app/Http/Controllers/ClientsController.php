@@ -8,15 +8,21 @@ use App\Client;
 
 class ClientsController extends Controller
 {
-    public function show($ownerTitle) {
+    public function index() {
 
+        $clients = Client::all();
 
-        return view('client', [
-            'client' => Client::where('ownerTitle', $ownerTitle)->firstOrFail()
-        ]);
-
-        //return view('client', compact('clients'));
-
-
+        return view('clients', compact('clients'));
+    
     }
+
+    public function store() {
+
+        Client::create(request(['companyName', 'ownerName', 'ownerTitle']));
+
+        return redirect('/clients');
+
+    
+    }
+
 }
