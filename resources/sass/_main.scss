@@ -1,0 +1,25 @@
+body {
+    margin: 0;
+    background-color: $body-bg;
+
+    .main {
+        //Main Container for all pages
+        width: 100%;
+    }
+
+    .container {
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+
+}
+
+
+//Typography
+h3 {
+    margin: 5px 0;
+}
+
+p {
+    margin: 2px 0;
+}

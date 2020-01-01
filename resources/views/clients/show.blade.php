@@ -31,16 +31,35 @@
         <p>Name: {{ $client->thirdFirst }} {{ $client->thirdLast }}</p>
         <p>Phone: {{ $client->thirdPhone }}</p>
         <p>Email: <a href="mailto:{{ $client->thirdEmail }}">{{ $client->thirdEmail }}</a></p>
-    </div>        
+    </div>
+    </section>
+    <section>      
     <div>
-        <h3>Company Website:</h3>
-        <p>Company Domain: <a href="http://{{ $client->companyWebsite }}"target="_blank">{{ $client->companyWebsite }}</a></p>
-        <p>Domain Registrar: <a href="{{ $client->domainRegistrar }}"target="_blank">{{ $client->domainRegistrar }}</a></p>
-        <p>Domain Name Server: <a href="{{ $client->nameServers }}"target="_blank">{{ $client->nameServers }}</a></p>
-        <p>Web Hosting: <a href="{{ $client->webHost }}"target="_blank">{{ $client->webHost }}</a></p>
-        <p>Email Provider: <a href="{{ $client->emailProvider }}"target="_blank">{{ $client->emailProvider }}</a></p>
         <p>Monthly Fee: {{ $client->monthlyBilling }}</p>
         <p>Billing Notes: {{ $client->billingNotes }}</p>
     </div>
+
+
+    <table class="table table-bordered">
+        <thead class="thead-light">
+        <tr>
+            <th>Domain</th>
+            <th>Registrar</th>
+            <th>Name Servers</th>
+            <th>Web Host</th>
+            <th>Email Provider</th>
+        </tr>
+    </thead>
+                <tr>
+                    <td><a href="http://{{ $client->companyWebsite }}"target="_blank">{{ $client->companyWebsite }}</a></td>
+                    <td><a href="{{ $client->domainRegistrar }}"target="_blank">{{ $client->domainRegistrar }}</a></td>
+                    <td><a href="{{ $client->nameServers }}"target="_blank">{{ $client->nameServers }}</a></td>
+                    <td><a href="{{ $client->webHost }}"target="_blank">{{ $client->webHost }}</a></td>
+                    <td><a href="{{ $client->emailProvider }}"target="_blank">{{ $client->emailProvider }}</a></td>
+                </tr>
+    </table>
+
+
+
 </section>
 @endsection

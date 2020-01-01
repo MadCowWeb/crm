@@ -11,10 +11,10 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
     <!-- Favicon and application icons for all browsers. Generated using
              https://realfavicongenerator.net/ -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
     <link rel="apple-touch-icon" sizes="180x180" href="/images/favicon/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon/favicon-16x16.png">
-    <link rel="manifest" href="/images/favicon/site.webmanifest">
     <link rel="mask-icon" href="/images/favicon/safari-pinned-tab.svg" color="#aa001c">
     <link rel="shortcut icon" href="/images/favicon/favicon.ico">
     <meta name="apple-mobile-web-app-title" content="Mad Cow Web Design">
@@ -23,6 +23,7 @@
     <meta name="msapplication-config" content="/images/favicon/browserconfig.xml">
     <meta name="theme-color" content="#ffffff">
     <link href="/css/app.css" rel="stylesheet" type="text/css">
+
 </head>
 
 <body>
@@ -32,10 +33,6 @@
             <div class="container">
                 <nav class="navbar navbar-expand-md navbar-light">
                     <a class="navbar-brand" href="/"><img src="/images/madcowwebdesign.jpg"></a>
-                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
                         <ul class="navbar-nav mr-auto">
                             <li class="nav-item active">
                                 <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
@@ -47,7 +44,6 @@
                                 <a class="nav-link" href="/create">Create New Client</a>
                             </li>
                         </ul>
-                    </div>
             </div> <!-- end header container -->
         </header>
         <div class="main-content container">

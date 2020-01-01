@@ -10,7 +10,7 @@ class ClientsController extends Controller
 {
     public function index() {
 
-        $clients = Client::sortable()->paginate(10);
+        $clients = Client::sortable()->paginate(40);
 
         return view('clients.index', compact('clients'));
     

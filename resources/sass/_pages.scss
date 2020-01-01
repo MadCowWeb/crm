@@ -1,0 +1,14 @@
+.client-details {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: flex-start;
+    align-content: flex-start;
+    margin-bottom: 50px;
+
+    div {
+        margin-bottom: 20px;
+        width: 100%;
+        max-width: 350px;
+    }
+}

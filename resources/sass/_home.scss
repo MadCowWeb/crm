@@ -1,0 +1,12 @@
+.home-container {
+    section {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+
+        article {
+            width: 300px;
+            margin: 0 30px 0;
+        }
+    }
+}
